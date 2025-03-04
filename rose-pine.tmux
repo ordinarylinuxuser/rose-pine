@@ -289,13 +289,13 @@ main() {
     readonly show_session=" #[fg=#{?client_prefix,$thm_love,$thm_text}]$current_session_icon #[fg=$thm_text]#S$field_separator"
 
     local show_user
-    readonly show_user="#[fg=$thm_iris]#(whoami)#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$username_icon"
+    readonly show_user="#[fg=$thm_iris]#(whoami)#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$username_icon$field_separator"
 
     local show_host
-    readonly show_host="$spacer#[fg=$thm_text]#H#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$hostname_icon"
+    readonly show_host="$spacer#[fg=$thm_text]#H#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$hostname_icon$field_separator"
 
     local show_date_time
-    readonly show_date_time=" #[fg=$thm_foam]$date_time#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$date_time_icon "
+    readonly show_date_time=" #[fg=$thm_foam]$date_time#[fg=$thm_subtle]$right_separator#[fg=$thm_subtle]$date_time_icon$field_separator"
 
     local show_directory
     readonly show_directory="$spacer#[fg=$thm_subtle]$current_folder_icon #[fg=$thm_rose]#{b:pane_current_path} "
